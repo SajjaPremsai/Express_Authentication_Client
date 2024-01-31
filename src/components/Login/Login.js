@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../Login/Login.css"
 import { Link, useNavigate } from 'react-router-dom'
 import axios from "axios"
+import Header from '../Header/Header'
 
 export default function Login() {
 
@@ -32,7 +33,13 @@ export default function Login() {
 
 
   return (
-<div className='container'>
+<div className='container Logincon'>
+  <Header/>
+  <br/>
+      <br />
+      <br />
+      <br />
+      
           <div className='con-1'>
               <h1 className='header'>Login</h1>
               <form className='form' onSubmit={HandleSubmit}>

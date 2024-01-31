@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import axios from "axios"
 import "../Dashboard/Dashboard.css"
 import { useNavigate } from 'react-router-dom'
+import Header from '../Header/Header'
 
 export default function Dashboard() {
   const [Message,setMessage] = useState("")
@@ -32,6 +33,11 @@ export default function Dashboard() {
 
   return (
     <div className='container cond12'>
+      <Header/>
+      <br />
+      <br />
+      <br />
+      <br />
       <h1>{Message}</h1>
       <button className='btn btn-danger' onClick={()=>{
         logout()

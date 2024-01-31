@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Link } from 'react-router-dom'
 import axios from "axios"
+import Header from '../Header/Header'
 
 export default function Register() {
   const [fullname , setfullname] = useState("")
@@ -34,7 +35,12 @@ export default function Register() {
       });
   }
   return (
-    <div className='container'>
+    <div className='container Registercon'>
+      <Header/>
+      <br />
+      <br />
+      <br />
+      <br />
       <div className='con-1'>
         <h1 className='header'>Register</h1>
         <form className='form' onSubmit={HandleSubmit}>

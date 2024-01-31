@@ -30,6 +30,13 @@
     padding: 20px;
 }
 
+
+.Logincon{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
 /* Media Query for Small Screens */
 @media (max-width: 600px) {
     .container {
