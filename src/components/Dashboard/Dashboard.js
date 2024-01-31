@@ -9,8 +9,9 @@ export default function Dashboard() {
   const navigation = useNavigate()
   useEffect(()=>{
     axios.defaults.withCredentials = true;
-    axios.get("https://express-authentication-93xn.onrender.com/Dashboard",)
+    axios.get("https://express-authentication-xv3i.onrender.com/Dashboard",)
     .then((res)=>{
+      console.log(res)
       if(res.data.verification){
         setMessage("Welcome " + res.data.value.username)
       }
@@ -23,7 +24,7 @@ export default function Dashboard() {
   },[])
 
   function logout(){
-    axios.get("https://express-authentication-93xn.onrender.com/logout")
+    axios.get("https://express-authentication-xv3i.onrender.com/logout")
     .then(()=>{
       navigation("/")
     })

@@ -13,11 +13,12 @@ export default function Login() {
   function HandleSubmit(e) {
     e.preventDefault();
     axios.defaults.withCredentials = true;
-    axios.post("https://express-authentication-93xn.onrender.com/login", {
+    axios.post("https://express-authentication-xv3i.onrender.com/login", {
       username: username,
       password: password
     })
       .then((res) => {
+        console.log(res)
         if(res.data.verification){
           navigation("/dashboard")
         }

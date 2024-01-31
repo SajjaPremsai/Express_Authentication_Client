@@ -15,7 +15,7 @@ export default function Register() {
   function HandleSubmit(e) {
     e.preventDefault();
 
-    axios.post("https://express-authentication-93xn.onrender.com/register", {
+    axios.post("https://express-authentication-xv3i.onrender.com/register", {
       Fullname : fullname,
       username: username,
       password: password,
